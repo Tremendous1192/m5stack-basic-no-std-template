@@ -1,0 +1,26 @@
+[package]
+name = "m5stack_basic_no_std_template"
+version = "0.0.0"
+authors = ["Tremendous1192"]
+edition = "2021"
+description = "M5Stack Basic templete on no_std"
+readme = "README.md"
+repository = "https://github.com/Tremendous1192/m5stack_basic_no_std_template"
+license = "MIT OR Apache-2.0"
+
+[dependencies]
+# ESP32マイコンのHAL
+hal = { package = "esp32-hal", version = "0.14.0" }
+# ESP32のパニック時のバックトレース処理
+esp-backtrace = { version = "0.7.0", features = ["esp32", "panic-handler", "exception-handler", "print-uart"] }
+# Espressif機器で`print!`と`println!`を扱う
+esp-println       = { version = "0.5.0", features = ["esp32"] }
+# Espressif機器でヒープを扱う
+esp-alloc = { version = "0.3.0" }
+# ↑ cargo generate したときに含まれているcrate
+
+[profile.dev]
+opt-level = 0
+
+[profile.release]
+opt-level = "z"
