@@ -14,6 +14,17 @@
 * C++ によるデスクトップ開発
 * ユニバーサル Windows プラットフォーム開発
 
+### [rustup](https://www.rust-lang.org/ja/tools/install)
+Rustのビルドツールをインストールします。
+```1) Proceed with installation (default)```で進めます。
+
+### [VS Code](https://code.visualstudio.com/)
+左側のExtentions(拡張機能)から次の拡張機能をダウンロードします
+* ```rust-analyzer```
+* ```CodeLLDB```
+* ```GitHub Pull Requests and Issues```
+* ```Choose a License```
+
 #### 遭遇したトラブル
 * エラーメッセージ
 
